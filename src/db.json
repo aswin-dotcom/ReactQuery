@@ -1,0 +1,70 @@
+{
+    "posts": [
+      {
+        "id": 1,
+        "title": "Introduction to JSON Server",
+        "content": "JSON Server helps you create a fake REST API easily.",
+        "author": "John Doe"
+      },
+      {
+        "id": 2,
+        "title": "Angular vs React",
+        "content": "Both frameworks are great, but it depends on the project needs.",
+        "author": "Jane Smith"
+      },
+      {
+        "id": 3,
+        "title": "Best Practices in .NET",
+        "content": "Following SOLID principles improves your .NET application.",
+        "author": "Michael Brown"
+      }
+    ],
+    "items": [
+      {
+        "id": 101,
+        "name": "Laptop",
+        "price": 799.99,
+        "category": "Electronics",
+        "stock": 50
+      },
+      {
+        "id": 102,
+        "name": "Smartphone",
+        "price": 499.99,
+        "category": "Electronics",
+        "stock": 120
+      },
+      {
+        "id": 103,
+        "name": "Headphones",
+        "price": 99.99,
+        "category": "Accessories",
+        "stock": 200
+      }
+    ],
+    "users": [
+      {
+        "id": 1,
+        "name": "John Doe",
+        "email": "john.doe@example.com",
+        "age": 28,
+        "role": "Admin"
+      },
+      {
+        "id": 2,
+        "name": "Jane Smith",
+        "email": "jane.smith@example.com",
+        "age": 24,
+        "role": "User"
+      },
+      {
+        "id": 3,
+        "name": "Michael Brown",
+        "email": "michael.brown@example.com",
+        "age": 32,
+        "role": "Moderator"
+      }
+    ]
+  }
+  
+  

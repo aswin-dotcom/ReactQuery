@@ -1,0 +1,1 @@
+http://localhost:3000/posts/?_limit=3&_page=1 -  >pagination url (limit) decides how many data  (page) how many -> pages
