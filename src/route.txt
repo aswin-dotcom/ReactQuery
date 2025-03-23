@@ -1,1 +1,43 @@
+tools 
+-----
+npm i @tanstack/react-query json-server@0.17.4 axiois react-router-dom
+npm i @tanstack/react-query-devtools    
+
+
+
+
+-----
 http://localhost:3000/posts/?_limit=3&_page=1 -  >pagination url (limit) decides how many data  (page) how many -> pages
+
+
+React-Query
+ 
+
+ If we want to use reactQuery  
+
+ go to main.jsx  wrap the app compoenent QueryClientProvider, create a object QueryClient and pass it as prop
+------------------------------------------------------------------------------------------------------------------
+ const {data,isLoading,error,isError} =  useQuery({
+        queryKey:['posts'],
+        queryFn:()=>fetchPosts()
+    })
+  instead of using states to handle this function useQuery defaultly return this 
+  data-> reponse for the api
+  isLoading-> boolean for isLoading
+  error-> error message
+  isError->boolean for error
+  ---------------------------------------------------------------------------------------------------------------
+  normal fetch
+
+
+-->Every time the component renders, it fetches fresh data from the API, even if the data hasn’t changed.
+-->If the user revisits this page, the API call runs again.
+-->Unnecessary network requests slow down the app.
+
+
+reactquery fetch
+
+
+-->React Query stores API responses in a cache using queryKey. If the same query is made again, it returns cached data instead of hitting the API.
+
+
