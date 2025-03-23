@@ -10,6 +10,7 @@ const Reactqueryfetch = () => {
     //this useQuery should be called whenever the component mounts and the querykey changed
     queryKey: ["posts"], //this should array ant value should be unique
     queryFn: () => fetchPosts(),
+    staleTime:5000
   });
   if (isLoading) {
     return <p>Loading please wait</p>;
