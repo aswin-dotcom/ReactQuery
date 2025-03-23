@@ -10,7 +10,9 @@ const Reactqueryfetch = () => {
     //this useQuery should be called whenever the component mounts and the querykey changed
     queryKey: ["posts"], //this should array ant value should be unique
     queryFn: () => fetchPosts(),
-    staleTime:5000
+    // staleTime:5000,
+    refetchInterval:1000,//runs every one second when we in the currect tab when we move to another tab no background fetching
+    // refetchIntervalInBackground:true,
   });
   if (isLoading) {
     return <p>Loading please wait</p>;
