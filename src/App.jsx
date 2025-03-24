@@ -7,6 +7,7 @@ import './App.css'
 import Reactqueryfetch from "./Components/Reactqueryfetch";
 import ReactqueryfetchByClick from "./Components/ReactqueryfetchByClick";
 import ReactQuerybypassingId from "./Components/ReactQuerybypassingId";
+import Pagination from "./Components/Pagination";
 
 const App = () => {
   return (
@@ -17,7 +18,7 @@ const App = () => {
           <NavLink to="/regular-fetch">Regularfetch</NavLink>
           <NavLink to="/query-fetch">reactQueryfetch</NavLink>
           <NavLink to="/query-click">Fetch By Click</NavLink>
-          {/* <NavLink to="/query-id/:post">Fetch By id</NavLink> */}
+          <NavLink to="/pagination">Pagination</NavLink>
         </nav>
         <Routes>
           <Route path="/" element={<Home />}>Home</Route>
@@ -25,6 +26,7 @@ const App = () => {
           <Route path="/query-fetch" element={<Reactqueryfetch />}>RegularFetch</Route>
           <Route path="/query-click" element={<ReactqueryfetchByClick />}>Fetch By Click</Route>
           <Route path="/query-id/:post" element={<ReactQuerybypassingId />}>Fetch By Click</Route>
+          <Route path="/pagination" element={<Pagination />}>Pagination</Route>
         </Routes>
       </BrowserRouter>
     </div>

@@ -41,3 +41,6 @@ reactquery fetch
 -->React Query stores API responses in a cache using queryKey. If the same query is made again, it returns cached data instead of hitting the API.
 
 
+Array.from({length:3},(_,i)=>i+1)  
+create the array of length 3 => [undefined,undefined,undefined]
+(_,i)=>i+1 => [1,2,3]
