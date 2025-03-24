@@ -1,6 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Reactqueryfetch = () => {
   const fetchPosts = async () => {
@@ -11,7 +12,7 @@ const Reactqueryfetch = () => {
     queryKey: ["posts"], //this should array ant value should be unique
     queryFn: () => fetchPosts(),
     // staleTime:5000,
-    refetchInterval:1000,//runs every one second when we in the currect tab when we move to another tab no background fetching
+    // refetchInterval:1000,//runs every one second when we in the currect tab when we move to another tab no background fetching
     // refetchIntervalInBackground:true,
   });
   if (isLoading) {
@@ -26,9 +27,9 @@ const Reactqueryfetch = () => {
       <h3>Use React Query</h3>
       <ul className="posts">
         {data?.data.map((post) => (
-          <li className="post" key={post.id}>
-            {post.title}
-          </li>
+          <Link key={post.id} to={`/query-id/${post.id}`}>
+            <li className="post">{post.title}</li>
+          </Link>
         ))}
       </ul>
     </div>
