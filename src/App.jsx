@@ -8,6 +8,7 @@ import Reactqueryfetch from "./Components/Reactqueryfetch";
 import ReactqueryfetchByClick from "./Components/ReactqueryfetchByClick";
 import ReactQuerybypassingId from "./Components/ReactQuerybypassingId";
 import Pagination from "./Components/Pagination";
+import Usequeries from "./Components/Usequeries";
 
 const App = () => {
   return (
@@ -19,14 +20,15 @@ const App = () => {
           <NavLink to="/query-fetch">reactQueryfetch</NavLink>
           <NavLink to="/query-click">Fetch By Click</NavLink>
           <NavLink to="/pagination">Pagination</NavLink>
+          <NavLink to="/react-queries">UseQueries</NavLink>
         </nav>
         <Routes>
-          <Route path="/" element={<Home />}>Home</Route>
-          <Route path="/regular-fetch" element={<RegularFetch />}>RegularFetch</Route>
-          <Route path="/query-fetch" element={<Reactqueryfetch />}>RegularFetch</Route>
-          <Route path="/query-click" element={<ReactqueryfetchByClick />}>Fetch By Click</Route>
-          <Route path="/query-id/:post" element={<ReactQuerybypassingId />}>Fetch By Click</Route>
-          <Route path="/pagination" element={<Pagination />}>Pagination</Route>
+          <Route path="/" element={<Home />}/>
+          <Route path="/regular-fetch" element={<RegularFetch />}/>
+          <Route path="/query-click" element={<ReactqueryfetchByClick />}/>
+          <Route path="/query-id/:post" element={<ReactQuerybypassingId />}/>
+          <Route path="/pagination" element={<Pagination />}/>
+          <Route path="/react-queries" element={<Usequeries />}/>
         </Routes>
       </BrowserRouter>
     </div>
