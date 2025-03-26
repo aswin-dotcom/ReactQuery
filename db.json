@@ -1,22 +1,21 @@
 {
   "posts": [
     {
-      "id": 1,
-      "title": "Introduction to JSON Server",
-      "content": "JSON Server helps you create a fake REST API easily.",
-      "author": "John Doe"
+      "id": 103,
+      "name": "Headphonesasasasasaasas",
+      "price": 99.99,
+      "category": "Accessoriessaaasa",
+      "stock": 200
     },
     {
-      "id": 2,
-      "title": "Angular vs React",
-      "content": "Both frameworks are great, but it depends on the project needs.",
-      "author": "Jane Smith"
+      "name": "asasaasas",
+      "category": "asasasa",
+      "id": 106
     },
     {
-      "id": 3,
-      "title": "Best Practices in .NET",
-      "content": "Following SOLID principles improves your .NET application.",
-      "author": "Michael Brown"
+      "name": "asasa",
+      "category": "ashsas",
+      "id": 107
     }
   ],
   "items": [
@@ -66,5 +65,3 @@
     }
   ]
 }
-
-
